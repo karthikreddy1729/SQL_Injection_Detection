@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <main>
+            <div class="jumbotron">
+                <h1>SQL Injection</h1>
+                <p>Welcome to SQL Testing</p>
+            </div>
+        </main>
+
+    </main>
+
+    <form method="POST" action="/about">
+        <label> Username</label>
+        <input type="text" name="username" />
+        <input type="submit" value="submit" />
+    </form>
+    <p><%= data %></p>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
